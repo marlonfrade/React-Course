@@ -1,6 +1,7 @@
-# Course Code & Materials
+# React Course Code Source
 
-This repository contains the course source code and other extra materials like slides.
+This repository contains the react course source code and other extra materials like slides.
+On the Main Branch you will find the folder named Marlon Version, with all the codes commented by me during the course
 
 ## How to use
 
