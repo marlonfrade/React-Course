@@ -9,3 +9,12 @@ console.log(num2);
 //Now numbers, strings, booleans, these are so-called primitive types whenever you reassign or you store
 // a variable in another variable.
 // It will copy the value, objects and arrays are reference types.
+
+const person = {
+  name: "Marlon",
+};
+
+const secondPerson = person;
+
+console.log(secondPerson);
+// Expect to return the object of person we declared
