@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
+  const [enteredTitle, setEnteredTitle] = useState();
+  const [enteredAmount, setEnteredAmount] = useState();
+  const titleChangeHandler = (e) => {
+    // Pattern to see what it's inside the event
+    // console.log(e.target.value);
+    setEnteredTitle(e.target.value);
+  };
+
   return (
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
-          <input type="text" />
+          <input type="text" onChange={titleChangeHandler} />
         </div>
         <div className="new-expense__control">
           <label>Amount</label>
