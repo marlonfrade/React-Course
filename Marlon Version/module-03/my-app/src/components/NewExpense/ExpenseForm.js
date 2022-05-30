@@ -42,12 +42,14 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
   };
+
   return (
     // It's a better way to react to onSubmit form that the click button
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
+
           <input
             type="text"
             onChange={titleChangeHandler}
